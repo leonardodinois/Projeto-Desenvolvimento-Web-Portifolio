@@ -2,11 +2,11 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Contato</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Contato</title> <!--  titulo da pagina -->
+    <link rel="stylesheet" href="style.css"> <!--  importando css -->
 </head>
 <body>
-    <div class="container">
+    <div class="container"> <!--  Criando menu para navegar entre as páginas -->
         <div class="menu">
             <a href="index.html">Sobre Mim</a>
             <a href="formacao.html">Formação</a>
@@ -18,6 +18,35 @@
             <h2>Entre em Contato | WhatsApp / Email</h2>
             <p>Email: leonardodinois35@gmail.com</p>
             <p>(16) 98807-5334</p>
+
+            <!-- Parte dos inputs para enviar mensagem -->
+            <h3>Envie uma Mensagem</h3> <!-- titulo principal -->
+            <div class="campo">
+                <label for="nome">Nome:</label>  <!--  campo para nome -->
+                <div class="input-container">
+                    <input type="text" id="nome" name="nome" required> <!-- input para escrever o nome -->
+                </div>
+            </div>
+
+            <div class="campo">
+                <label for="email">Email:</label> <!--  campo para email -->
+                <div class="input-container">
+                    <input type="email" id="email" name="email" required> <!--input para escrever o email -->
+                </div>
+            </div>
+
+            <div class="campo">
+                <label for="mensagem">Mensagem:</label> <!--  campo para mensagem -->
+                <div class="input-container">
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea> <!-- input para escrever a mensagem -->
+                </div>
+            </div>
+
+            <div class="campo">
+                <div class="input-container">
+                    <button type="submit">Enviar</button> <!-- botao de enviar -->
+                </div>
+            </div>
         </div>
     </div>
 </body>
